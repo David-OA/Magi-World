@@ -9,7 +9,6 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
-
     public static void main(String[] args) {
         int numPersonnage = 1;
         Personnage personnage1 = creerPersonnage(numPersonnage);
@@ -22,6 +21,11 @@ public class Main {
         personnage1.playGame(); //crééer la méthode startGame //
     }
 
+    /**
+     * The création of characters
+      * @param numPersonnage
+     * @return character
+     */
     private static Personnage creerPersonnage(int numPersonnage) {
         Personnage p;
         int type, level, strenght, agility, intelligence;
@@ -52,6 +56,12 @@ public class Main {
         return p;
     }
 
+    /**
+     * The scanne of differents choice
+     * @param str
+     * @param min
+     * @return
+     */
     private static int ask(String str, int min) {
         int choice;
         boolean goodChoice;
@@ -75,6 +85,13 @@ public class Main {
         return choice;
     }
 
+    /**
+     * Complete the action of scanner
+     * @param str
+     * @param min
+     * @param max
+     * @return
+     */
     public static int ask(String str, int min, int max) {
         int choice;
         do {

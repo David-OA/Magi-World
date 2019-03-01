@@ -24,7 +24,11 @@ public class Ninja extends com.gaming.magiworld.personnage.Personnage {
 
     }
 
-
+    /**
+     * This is the different attacks of character
+     * @param choice the attack
+     * @returnchoice of gamer
+     */
     protected String play(int choice) {
         String phrase = "";
         switch (choice) {
