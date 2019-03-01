@@ -13,6 +13,7 @@ public class Personnage {
     String numPersonnage;
     private Object Personnage;
 
+    public String cri;
 
     /**
      * The different characteristics of the characters
@@ -23,7 +24,7 @@ public class Personnage {
      * @param agility of character
      * @param intelligence of character
      */
-    public Personnage(int type, int level, int life, int strength, int agility, int intelligence) {
+    public Personnage(int type, int level, int life, int strength, int agility, int intelligence, String cri) {
         name = "Joueur " + numPersonnage;
         this.type = type;
         this.level = level = strength + agility + intelligence;
@@ -31,6 +32,7 @@ public class Personnage {
         this.strength = strength;
         this.agility = agility;
         this.intelligence = intelligence;
+        this.cri = cri;
     }
 
     public Object getPersonnage() {
@@ -64,7 +66,7 @@ public class Personnage {
      * @return the string for all personnage
      */
     public String toString() {
-        return " ! Je suis le " + type + ", " + ", niveau " + level + ", je possède " + life + " de vitalité, " + strength + " de force, " + agility + " d'agilité et " + intelligence + " d'intelligence;";
+        return cri + " ! Je suis le " + type + ", " + ", niveau " + level + ", je possède " + life + " de vitalité, " + strength + " de force, " + agility + " d'agilité et " + intelligence + " d'intelligence;";
     }
 
     public int getLife() {

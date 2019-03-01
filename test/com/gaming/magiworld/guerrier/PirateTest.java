@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class PirateTest {
     @Test
     public void testPirateDescription() {
-        Pirate pirate = new Pirate(2,40,200,8,12,20);
+        Pirate pirate = new Pirate(2,40,200,8,12,20,"Woarg");
         assertEquals(pirate.toString(),"Woarg !!! Je suis le Pirate Joueur 2, niveau 40, je possède 200 de vitalité, 8 de force, 12 d'agilité et 20 d'intelligence");
     }
 

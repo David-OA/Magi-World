@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class MagicienTest {
     @Test
     public void testMagicienDescription(){
-        Magicien magicien = new Magicien(1,40,200, 8, 12, 20);
+        Magicien magicien = new Magicien(1,40,200,8,12,20, "Abracadabra");
         assertEquals(magicien.toString(), "Abracadabra ! Je suis le Magicien, Joueur 1, niveau 40, je possède 200 de vitalité, 8 de force, 12 d'agilité et 20 d'intelligence");
     }
 

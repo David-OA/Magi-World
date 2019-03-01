@@ -12,8 +12,9 @@ public class Ninja extends com.gaming.magiworld.personnage.Personnage {
      * @param agility of character
      * @param intelligence of character
      */
-    public Ninja(int type, int level, int life, int strength, int agility, int intelligence) {
-        super(type, level, life, strength, agility, intelligence);
+    public Ninja(int type, int level, int life, int strength, int agility, int intelligence, String cri) {
+        super(type, level, life, strength, agility, intelligence, cri);
+        this.cri = "Kowa Bounga";
     }
 
     public Ninja(int numPersonnage, int strenght, int agility, int intelligence) {

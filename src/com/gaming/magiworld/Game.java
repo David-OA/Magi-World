@@ -53,7 +53,7 @@ public class Game {
      * @param choice at the player
      * @return
      */
-    protected String play(int choice) {
-        return null;
+    protected int play(int choice) {
+        return choice;
     }
 }
