@@ -84,4 +84,7 @@ public class Personnage {
     public int getAgility() {
         return agility;
     }
+
+    public void playGame() {
+    }
 }
