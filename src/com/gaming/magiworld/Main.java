@@ -16,9 +16,8 @@ public class Main {
         numPersonnage++;
         Personnage personnage2 = creerPersonnage(numPersonnage);
         System.out.println(personnage2.toString());
-        personnage1.setAdversaire(personnage2); //créer la méthode setAdversaire dans personnage //
-        personnage2.setAdversaire(personnage1);
-        personnage1.playGame(); //crééer la méthode startGame //
+        Game game = new Game();
+        game.playGame();
     }
 
     /**
@@ -30,7 +29,7 @@ public class Main {
         Personnage p;
         int type, level, strenght, agility, intelligence;
         System.out.println("Création du personnage du Joueur " + numPersonnage);
-        type = ask("Veuillez choisir la classe de votre personnage (1 : Geurrier, 2 : Rôdeur, 3 : Mage)", 1, 3);
+        type = ask("Veuillez choisir la classe de votre personnage (1 : Geurrier, 2 : Rôdeur, 3 : Mage)", 1 , 3);
         do {
             level = ask("Niveau du personnage ?", 1);
             strenght = ask("Force du personnage ?", 0);

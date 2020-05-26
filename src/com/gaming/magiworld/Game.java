@@ -3,9 +3,6 @@ package com.gaming.magiworld;
 import com.gaming.magiworld.personnage.Personnage;
 
 public class Game {
-    private Personnage Pirate;
-    private Personnage Magicien;
-    private Personnage Ninja;
     private String name;
     int life;
     int choice;
@@ -16,7 +13,7 @@ public class Game {
     /**
      *
      */
-    private void playGame() {
+    public void playGame() {
         while (true)
             if (life > 0) {
                 do {
@@ -34,18 +31,6 @@ public class Game {
                     System.out.println("Le " + name + " à perdu !");
                 }
             }
-    }
-
-    public void setPirate(Personnage pirate) {
-        Pirate = pirate;
-    }
-
-    public void setMagicien(Personnage magicien) {
-        Magicien = magicien;
-    }
-
-    public void setNinja(Personnage ninja) {
-        Ninja = ninja;
     }
 
     /**
